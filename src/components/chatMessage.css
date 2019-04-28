@@ -1,0 +1,14 @@
+.container {
+  border: 2px solid rgb(109, 33, 128);
+  background-color: #222029;
+  border-radius: 12px;
+  padding: 8px;
+  margin: 8px 0;
+  color: white;
+}
+  
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}

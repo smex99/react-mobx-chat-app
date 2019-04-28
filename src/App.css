@@ -1,0 +1,17 @@
+.app {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.app .simple {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px
+}
+
+.app .popup {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 16px
+}
