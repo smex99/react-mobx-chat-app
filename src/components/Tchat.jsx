@@ -37,7 +37,7 @@ class Tchat extends React.Component {
       <React.Fragment>        
         <div className="chat-popup" id="myForm">
           <form className="form-container" onSubmit={this.handleSubmit}>
-            <h1>Tchat</h1>
+            <h2>Popup tchat</h2>
 
             <ScrollArea
               speed={0.8}

@@ -1,17 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { Provider } from 'mobx-react';
+
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { Provider } from 'mobx-react';
 import MessageStore from './stores/MessageStore';
+import PostStore from './stores/PostStore';
 
 
 const Root = (
-  <Provider MessageStore={MessageStore}>
-    <App />
-  </Provider>
+  <BrowserRouter>
+    <Provider 
+      MessageStore={MessageStore} 
+      PostStore={PostStore}
+    >
+      <App />
+    </Provider>
+  </BrowserRouter>
 );
 
 ReactDOM.render(Root , document.getElementById('root'));

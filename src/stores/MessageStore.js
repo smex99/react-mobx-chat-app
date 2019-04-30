@@ -1,4 +1,10 @@
-import { observable, decorate, action, configure } from 'mobx'; 
+import { 
+  observable, 
+  decorate, 
+  action, 
+  computed, 
+  configure,
+} from 'mobx';
 
 configure({ enforceActions: 'observed' });
 
@@ -10,12 +16,16 @@ class MessageStore {
   addMessage = (message) => {
     this.messageData.push(message);
   };
+
+  get count() {
+    return this.messageData.length;
+  };
 }
 
 decorate(MessageStore, {
-    messageData: observable,
-    addMessage: action,
+  messageData: observable,
+  addMessage: action,
+  count: computed,
 });
 
 export default new MessageStore();
-

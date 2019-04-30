@@ -7,6 +7,7 @@ const Navbar = props => {
 			<div className="topnav">
         <a className="active" href="#home">Home</a>
         <a href="#chat">Chat</a>
+        <a href="#posts">Posts</a>
 			</div>
     </React.Fragment>
   );
