@@ -10,14 +10,14 @@ class Posts extends React.Component {
 		const { PostStore } = this.props;
 		
     return(
-			<React.Fragment>
+			<div className="posts">
 				{PostStore.postData.map(post => (
-					<div className="posts">
-						<h3 className="">{post.title}</h3>
+					<div key={post.id} className="post">
+						<h3 className="post-title">{post.title}</h3>
 						<p className="">{post.body}</p>
 					</div>
 				))}
-			</React.Fragment>
+			</div>
     );
   }
 }

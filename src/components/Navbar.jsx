@@ -1,16 +1,22 @@
 import React from 'react';
+import { observer, inject } from 'mobx-react';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
-const Navbar = props => {
+const Navbar = ({ MessageStore }) => {
   return(
     <React.Fragment>
 			<div className="topnav">
-        <a className="active" href="#home">Home</a>
-        <a href="#chat">Chat</a>
-        <a href="#posts">Posts</a>
+        <NavLink to="/home">Home</NavLink>
+        <NavLink to="/chat">Chat room</NavLink>
+        <NavLink to="/posts">Posts</NavLink>
+        <NavLink to="/chat" className="notification">
+        <span>Inbox</span>
+        <span class="badge">{MessageStore.count}</span>
+        </NavLink>
 			</div>
     </React.Fragment>
   );
 }
 
-export default Navbar;
+export default inject("MessageStore")(observer(Navbar));

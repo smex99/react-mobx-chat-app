@@ -1,4 +1,5 @@
 .container {
+  max-width: 800px;
   border: 2px solid rgb(109, 33, 128);
   background-color: #222029;
   border-radius: 12px;

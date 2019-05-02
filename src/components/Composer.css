@@ -1,5 +1,6 @@
 .composer {
-  width: 100%;
+	display: flex;
+  width: 800px;
   padding: 15px;
   color: white;
   margin: 5px 0 22px 0;
@@ -15,10 +16,11 @@
 }
 
 .btn {
+	text-align: center;
 	font-size: 17px;
 	font-weight: 500;
 	color: white;
-	padding: 16px 20px;
+	padding: 16px 16px;
 	border: none;
 	cursor: pointer;
 	width: 160px;
@@ -26,7 +28,10 @@
 	opacity: 0.8;
 }
 
+.icon {
+	margin: 0px 16px;
+}
+
 .send {
 	background-color: rgb(109, 33, 128);
-	border-radius: 12px;
 }

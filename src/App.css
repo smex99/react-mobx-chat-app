@@ -1,17 +1,26 @@
 .app {
-  margin-top: 16px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+   
 }
 
-.app .simple {
-  display: flex;
-  flex-direction: column;
-  padding: 16px 16px
+.posts {
+    display: flex;
+    flex-direction: column;
 }
 
-.app .popup {
-  display: flex;
-  justify-content: flex-end;
-  padding: 16px 16px
+.post {
+    background-color: rgb(22, 30, 36);
+    max-width: 900px;
+    margin: 16px 16px;
+    padding: 0px 8px;
+}
+
+.post .post-title {
+    color: rgb(109, 33, 128);
+    text-transform: capitalize;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 16px;
 }

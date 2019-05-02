@@ -16,12 +16,35 @@
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    border-bottom: solid 2px rgb(109, 33, 128);
+    color: white;
   }
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: rgb(109, 33, 128);
+    border-bottom: solid 2px rgb(109, 33, 128);
+    color: white;
+  }
+
+  .notification {
+    color: white;
+    text-decoration: none;
+    padding: 15px 26px;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+  }
+  
+  .notification:hover {
+    
+  }
+  
+  .notification .badge {
+    position: absolute;
+    top: 10px;
+    right: -18px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: rgb(109, 33, 128);
     color: white;
   }
